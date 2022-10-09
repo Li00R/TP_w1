@@ -1,0 +1,291 @@
+body {
+    color: rgb(210, 210, 210);
+    background-image: url(../images/background.png);
+    margin: 0px;
+}
+
+.menu, .menu-mobile, .center, footer, .champ_habilidades, .tabla_matchups, .tipos_de_objetos, .text_historia, .tabla-build, .form-build {
+    display: flex;
+}
+
+
+.menu-mobile {
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgba(20, 20, 20, 0.801);
+}
+
+.btn_menu {
+    padding: 0.5em;
+    background-color: rgb(52, 53, 53);
+    border-radius: 16px;
+}
+
+.btn_menu a{
+    text-decoration: none;
+}
+
+.btn_menu:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.menu {
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.801); 
+}
+
+ol.navigation {
+    width: 100%;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+}
+                     
+ol.navigation.show {        /* show menu mobile */
+    display: flex;
+}
+
+ol.navigation li {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    list-style: none;
+    padding-right: 0px;
+}
+
+ol.navigation li a {         /*problemas para el area de seleccion, no quiere cortarse en el eje derecho todas por igual*/
+    text-decoration: none;
+    padding: 1em;
+    padding-right: 74%;
+    color: rgb(218, 218, 218);
+}
+
+ol.navigation li a:hover {
+    background-color: rgb(87, 85, 85);
+}
+
+@media screen and (max-width: 819px) { /* sino el menu queda desfigurado*/
+    ol.navigation li {
+        width: 126%;
+    }
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.text_historia {
+    margin-left: 8%;
+    width: 80%;
+    background-color: rgba(12, 12, 12, 0.521);
+    padding: 1%;
+}
+
+.text_historia {
+    margin-left: 8%;
+    width: 75%;
+    background-color: rgba(12, 12, 12, 0.521);
+    padding: 5%;
+}
+
+.splash_art {
+    width: 100%;
+}
+
+.link_pag {
+    text-decoration: none;
+    color: rgb(130, 0, 134);
+    margin-left: 0.3em;
+}
+footer {
+    justify-content: end;
+    margin-right: 0.2em;
+}
+
+/* SECCION HABILIDADES */
+
+.champ_habilidades {
+    width: 100%;
+    justify-content: center;
+}
+
+.img_champ_logo {
+    display: none;
+}
+
+.habilidad {
+    flex-direction: column;
+    background-color: rgba(14, 14, 14, 0.699);
+    padding: 1%;
+    margin: 2%;
+    width: 90%;
+}
+
+.habilidades {
+    margin-left: 3%;
+}
+
+.key_champ_action {
+    margin-top: 0px;
+    margin-left: 6%;
+    margin-bottom: 3%;
+    color: crimson;
+}
+
+.pasiva {
+    margin-top: 0px;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    color: crimson;
+}
+
+.hability_title {
+    color: rgb(51, 51, 253);
+    margin: 1%;
+}
+
+.text_argument {
+    margin: 0%;
+    margin-left: 2%;
+    font-size: 16px;
+}
+
+/*  SECCION COUNTERS */
+
+thead {
+    color: rgb(201, 201, 201);
+    background-color: rgb(78, 0, 102);
+    font-size: 30px;
+}
+
+table, tr, td, th {
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+table {
+    background-color: rgba(20, 20, 20, 0.658);
+    font-size: 20px;
+}
+
+.tabla_matchups {
+    justify-content: center;
+}
+
+/* SECCION OBJETOS*/
+
+.tipos_de_objetos {
+    flex-direction: column;
+}
+
+.lista_obj {
+    list-style: none;
+    background-color: rgba(14, 14, 14, 0.664);
+    margin: 5%;
+    padding: 2%;
+}
+
+.objetos {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+.item_obj {
+    margin: 3%;
+}
+
+/* SECCION FORMULARIO  */
+
+.formulario {
+    background-color: rgba(26, 26, 26, 0.678);
+    padding: 3%;
+    width: 30%;
+}
+
+.form-build {
+    justify-content: center;
+    margin: 1em;
+}
+
+    /* SECCION TABLA DE BUILDS */
+.tabla-build {
+    background-color: rgba(24, 24, 24, 0.678);
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    justify-content: center;
+}
+label {
+    font-size: 23px;
+}
+
+@media screen and (min-width: 820px){  /* Desktop */
+    
+    .btn_menu, #logo {
+       display: none;
+    }
+
+    ol.navigation {        /* Menu horizontal */
+        display: flex;
+        flex-direction: row;
+    }
+
+    ol.navigation li {
+        padding: 0px;
+        width: none;
+    }
+
+    ol.navigation li a{
+        padding: 1em;
+    }
+
+    ol.navigation li:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    ol.navigation li a:hover {
+        background-color: rgb(87, 85, 85); 
+    }
+
+    /* SECCION OBJETOS */
+
+    .tipos_de_objetos {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .objetos {
+        width: 35%;
+        margin-left: 0%;
+    }
+    
+    .img_champ_logo {
+        display: flex;
+        max-width: 46%;
+        margin: 2%;
+    }
+    
+
+    .text_historia {
+        display: flex;
+        width: 98%;
+        background-color: rgba(12, 12, 12, 0.521);
+        padding: 1%;
+        margin-left: 0%;
+    }
+
+    /* SECCIONM HABILIDADES */
+
+    .champ_habilidades {
+        width: 80%;
+        justify-content: center;
+    }
+    
+    .habilidad {
+        flex-direction: column;
+        background-color: rgba(14, 14, 14, 0.699);
+        padding: 1%;
+        margin: 2%;
+        width: 90%;
+    }
+}

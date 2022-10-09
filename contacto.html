@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="menu-mobile">
+            <img id="logo" src="images/logo.png" alt="">
+            <div class="btn_menu"><img src="images/menu-mobile.png" alt="menu-mobile"></div>
+        </div>     
+        <div class="menu">
+            <ol class="navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="habilidades-ashe.html">Habilidades</a></li>
+                <li><a href="matchups-ashe.html">Matchups</a></li>
+                <li><a href="objetos-ashe.html">Objetos</a></li>
+                <li><a href="tus_builds.html">Tus Builds</a></li>
+                <li><a href="builds_compartidas.html">Builds compartidas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+           </ol>
+        </div>  
+    </header>
+    <script src="js/script-menu.js"></script>
+    <h1 class="centrar">Contacto</h1>
+    <form action="" class="formulario">
+        <p>Nombre de invocador <input type="text" name="Invocador" id="name_invocador"></p>
+        En que linea usas Ashe
+        <select name="" id="">
+            <option value="Top">Top</option>
+            <option value="Jg">Jg</option>
+            <option value="Mid">Mid</option>
+            <option value="Adc">Adc</option>
+            <option value="Sup">Sup</option>
+        </select>
+        <p>Captcha: <span id="captcha_numeros"></span> <button type="button" id="r_captcha">Recargar</button></p>
+        <input type="text" name="captcha_i" id="captcha_input">
+        <button type="button" id="boton_enviar">Enviar</button>
+        <p id="validacion"></p>
+        <script src="js/captcha_script.js"></script>
+    </form>
+</body>
+</html>
